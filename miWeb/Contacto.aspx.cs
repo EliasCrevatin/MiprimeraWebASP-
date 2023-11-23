@@ -15,7 +15,10 @@ namespace miWeb
             {
                 string user = Request.QueryString["nombre"].ToString();
                 lblUser.Text = user + " tu ingreso fue exitoso";
-            } 
+            }else
+            {
+                lblUser.Text = " ****** ingreso fue exitoso";
+            }
 
         }
     }
